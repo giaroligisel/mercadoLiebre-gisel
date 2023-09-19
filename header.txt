@@ -1,0 +1,196 @@
+HEADER
+
+    HTML:
+
+        <header>
+            <h2 class="logo">NINNA</h2>
+            <div class="burger-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Buscar...">
+                <button id="search-button">Buscar</button>
+                <button id="lupa-button"><i class="fas fa-search"></i></button>
+            </div>
+            <nav class="navigation" id="a1">
+                <a href="#">Sobre Nosotros</a>
+                <a href="#">Servicios</a>
+                <a href="#">Contacto</a>
+            </nav>
+            <nav class="navigation" id="a3">
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </nav>
+            <nav class="navigation" id="a2">
+                <a href="#">Vinos</a>
+                <a href="#">Uvas</a>
+                <a href="#">Whiskies</a>
+                <a href="#">Spirits</a>
+                <a href="#">Cervezas</a>
+                <a href="#">Promociones</a>
+            </nav>
+        </header>
+
+    CSS:
+
+    header, footer {
+        background-color: #722f37;
+    }
+
+    .logo, nav#a1, nav#a2 {
+        display: none;
+    }
+
+    .burger-menu, i {
+        color: #fff;
+        font-size: 14px;
+    }
+
+    .fa-user, .fa-shopping-cart, .fa-bars {
+        width: 20px;
+        text-align: center;
+    }
+
+    #lupa-button {
+        border: none;
+        background-color: #722f37;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        color: #fff;
+        padding: 5px 0px;
+    }
+
+    #search-button {
+        display: none;
+    }
+    #search-input {
+        width: 70%;
+    }
+    .search-container {
+        flex-grow: 1;
+        margin-left: 15px;
+    }
+
+
+    @media (min-width:769px) {
+
+    .logo{
+        display: block;
+        font-size: 2em;
+        color: #fff;
+        user-select: none;
+    }
+
+    nav#a2 {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 30px;
+        font-size: larger;
+    }
+    
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 35px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 99;
+    }
+
+    nav#a1 {
+        display: block;
+        max-width: 40%;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .navigation a {
+        position: relative;
+        font-size: 1.1em;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500;
+        margin: 0px 10px;
+    }
+
+    i {
+        font-size: 1.1em;
+        width: auto;
+    }
+
+    nav#a3 {
+        margin: 0px;
+    }
+
+    .navigation a::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background:#fff ;
+        border-radius: 5px;
+        transform: scaleX(0);
+        transition: transform .5s;
+    }
+    
+    .navigation a:hover::after{
+        transform: scaleX(1);
+    }
+    
+    .search-container {
+        text-align: center;
+        flex-grow: 1;
+    }
+    
+    #search-input {
+        padding: 5px;
+        width: 65%;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        text-align: center;
+    } 
+
+    #lupa-button {
+        display: none;
+    }
+
+    #search-button {
+        display: inline-block;
+        padding: 5px 20px;
+        font-size: 16px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+    }    
+    
+    #search-button:hover {
+        background-color: #555;
+    }
+    
+    footer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    }
+

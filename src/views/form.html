@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de producto</title>
+    <!--iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="stylesheet"> 
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@500&display=swap" rel="stylesheet"> <!--google fonts-->
+    <!--hoja de estilos-->
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img class="logo" src= 'images/logo-mercado-liebre.svg' alt="Logo del sitio">  
+            <div><input class ="barra" type="text" placeholder="Buscar productos, marcas y más..."></div>
+            <div class = "lupa"> <i class="fas fa-search"></i> </div>
+            <div class="copy-header">
+                <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito          
+            </div>
+        </div>
+
+        <nav class="main-navbar">
+            <ul>
+                <li> <a href=""> Ofertas </a></li>
+                <li> <a href=""> Tiendas oficiales</a> </li>
+                <li> <a href=""> Vender </a></li>
+                <li> <a href=""> Ayuda </a></li>
+            </ul>
+            <ul>
+                <li> <a href="/register"> Creá tu cuenta </a> <i class="far fa-id-card"></i> </li>
+                <li> <a href="/login"> Ingresá </a> <i class="fas fa-sign-in-alt"></i> </li>
+                <li> <a href=""> Mis compras </a> <i class="fas fa-shopping-basket"></i> </li>
+            </ul>
+        </nav>
+
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <main>
+    <form action="/crear-producto" method="POST" class="create-form">
+        <div class="control-formulario">
+            <label>Nombre del producto</label>
+            <input type="text" name="nombre" class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Precio del producto</label>
+            <input type="number" name="precio" placeholder="123.45" class="control">
+        </div>
+        <div class="control-formulario">
+            <label>Categoría</label>
+            <select name="categoria" class="control">
+                <option value="hogar">Hogar</option>
+                <option value="electro">Electro</option>
+                <option value="indumentaria">Indumentaria</option>
+            </select>
+        </div>
+        <div>
+            <label>Ciudad</label>
+            <select name="ciudad" class="control">
+                <option value="baires">Buenos Aires</option>
+                <option value="ros">Rosario</option>
+                <option value="mdz">Mendoza</option>
+            </select>
+        </div>
+        <div class="control-formulario">
+            <label>Descripción</label>
+            <textarea name="descripcion" class="control"></textarea>
+        </div>
+        <div class="control-formulario">
+            <label>Está en oferta</label>
+            <input type="radio" name="enOferta">
+        </div>
+        <button type="reset" class="boton-formulario">Borrar</button>
+        <button type="submit" class="boton-formulario">Guardar</button>
+    </form>
+    <article class="product">
+        <img src="/images/img-cafetera-moulinex.jpg" alt="">
+        <h2>Cafetera Moulinex</h2>
+    </article>
+    <article class="product">
+        <img src="/images/img-cafetera-moulinex.jpg" alt="">
+        <h2>Cafetera Moulinex</h2>
+    </article>
+    <article class="product">
+        <img src="/images/img-cafetera-moulinex.jpg" alt="">
+        <h2>Cafetera Moulinex</h2>
+    </article>
+    <article class="product">
+        <img src="/images/img-cafetera-moulinex.jpg" alt="">
+        <h2>Cafetera Moulinex</h2>
+    </article>
+</main>
+</body>
+</html>
