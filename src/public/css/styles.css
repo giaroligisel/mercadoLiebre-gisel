@@ -12,7 +12,7 @@ body {
 
 /* HEADER */
 
-.main-header {
+.header-principal {
     background-color: #EAC926;
     color: #000000;
     padding: 15px;
@@ -22,7 +22,7 @@ body {
     z-index: 100;
 }
 
-.main-navbar {
+.barra-navegacion {
     font-weight: normal;
 }
 
@@ -55,15 +55,15 @@ input.barra, .lupa {
     border-radius: 6px;
 }
 
-.main-header-top-bar {
+.barra-superior {
     position: relative;
 }
 
-.copy-header {
+.compra-header {
     text-align: center;
 }
 
-.main-navbar {
+.barra-navegacion {
     display: none;    
 }
 
@@ -95,14 +95,14 @@ main {
 
     /* Producto */
 
-.last-visit,
+.ultima-visita,
 .ofertas {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.last-visit > h3, .ofertas > h3 {
+.ultima-visita > h3, .ofertas > h3 {
     font-size: 24px;
     color: #666;
     width: 100%;
@@ -194,7 +194,7 @@ footer i {
 }
 
 /* FORMULARIOS */
-.create-form {
+.formulario {
     padding: 20px 15px;
     margin-top: 160px;
 }
@@ -254,7 +254,7 @@ footer i {
     padding: 8px 25px;
     border:#1259c3;
     border-radius: 10px;
-    width: 100px;
+    width: 40%;
 }
 
 .boton-login {
@@ -291,23 +291,23 @@ footer i {
     padding: 5px 10px;
     border-radius: 5px;
 }
-.product {
+.producto-form {
     padding: 0 15px;
     position: relative;
     margin: 30px 15px;
 } 
 
-.product img {
+.producto-form img {
     width: 100%;
 }
 
-.product:hover h2{
+.producto-form:hover h2{
     opacity: 1;
     background-color: rgba(255, 0, 0, 0.5);
     border-radius: 50%;
 }
 
-.product h2 {
+.producto-form h2 {
     background-color: rgba(0, 0, 0, 0.5);
     color: #ffffff;
     margin: 0;
@@ -326,7 +326,7 @@ footer i {
 
 @media (min-width: 361px){
     /* HEADER */
-    .main-navbar {
+    .barra-navegacion {
         display: flex;
         justify-content: space-between;
     }
@@ -335,11 +335,11 @@ footer i {
         width: 45%;
     }
     
-    .main-navbar ul {
+    .barra-navegacion ul {
         display: flex;
     }
 
-    .main-navbar li {
+    .barra-navegacion li {
         margin: 0 5px;
     }
 
@@ -347,13 +347,13 @@ footer i {
         display: none;
     }
 
-    .main-navbar ul {
+    .barra-navegacion ul {
         list-style: none;
         margin: 0;
         padding: 0;
     }
     
-    .main-navbar a {
+    .barra-navegacion a {
         text-decoration: none;
         color: #000000;
         display: inline-block;
@@ -365,7 +365,7 @@ footer i {
         padding: 10px;
     }
 
-    .main-header-top-bar {
+    .barra-superior {
         display: flex;
         justify-content: space-between;
     }
@@ -379,7 +379,7 @@ footer i {
         right: 250px;
     }
 
-    .copy-header { 
+    .compra-header { 
         width: 200px;
     }
 
@@ -406,7 +406,7 @@ footer i {
     }
 
     /* FORMULARIOS */
-    .create-form {
+    .formulario {
         margin-top: 130px;
     }
 }
@@ -419,17 +419,17 @@ footer i {
 
     input.barra, .lupa {
         position: absolute;
-        right: 450px;
+        right: 35%;
     }
 
-    .copy-header { 
+    .compra-header { 
         position: absolute;
         right: 0;
         top: 10px;
         width: auto;
     }
 
-    .main-header-top-bar, .main-navbar {
+    .barra-superior, .barra-navegacion {
         max-width: 1200px;
         margin: auto;
     }
@@ -489,7 +489,7 @@ footer i {
         justify-content: space-between;
     }
 
-    .boton-login:hover {
+    .boton-login:hover, .boton:hover {
         background-color: #0022AA;
     }
 }
