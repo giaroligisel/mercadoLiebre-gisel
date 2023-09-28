@@ -32,19 +32,17 @@ img.logo  {
 }
 
 input.barra {
+    padding: 10px;
     width: 45%;
     background-color: #ffffff;
     color:  #666;
     font-size: 12px;
     height: 30px;
-    /* align-self: center; */
 }
 
 .lupa {
-    /* display: inline-block; */
     background-color: #ffffff; 
     padding: 4.3px;;
-    /* align-self: center; */
 }
 
 input.barra, .lupa {
